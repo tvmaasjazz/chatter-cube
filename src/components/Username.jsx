@@ -1,8 +1,8 @@
 let Username = () => (
-  <div>
-    <div>Please Pick a Username</div>
-    <span>Username:</span>
-    <input type="text" name="username"/>  
+  <div className="username">
+    <div className="username--message">Please Enter a Username</div>
+    <span className"username--label">Username: </span>
+    <input className="username--input" type="text" name="username"/>  
   </div> 
 );
 

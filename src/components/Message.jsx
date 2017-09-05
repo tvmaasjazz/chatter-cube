@@ -2,8 +2,8 @@ let Message = ({message}) => {
 
   return (
     <div className="message">
-      <div>{message.username}</div>
-      <div>{message.message}</div>
+      <div className="message--username">{message.username}</div>
+      <div className="message--message">{message.message}</div>
     </div>
   );
 };

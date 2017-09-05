@@ -6,7 +6,7 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>
+      <div className="app">
         <div><Header /></div>
         <div><Username /></div>
         <div><Messages messages={window.sampleMessages}/></div>
