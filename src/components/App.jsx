@@ -6,9 +6,14 @@ class App extends React.Component {
   render() {
 
     return (
-      <div>HELLO</div>
+      <div>
+        <div><Header /></div>
+        <div><Username /></div>
+        <div><Messages messages={window.sampleMessages}/></div>
+      </div>  
     );
   }
 }
 
 window.App = App;
+
