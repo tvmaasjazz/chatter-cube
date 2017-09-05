@@ -2,7 +2,17 @@ window.getChatterMessages = (callback) => {
   axios.get('http://chattercube.thirdtape.com/messages')
     .then((res) => {
       console.log('successful get');
-      callback(res.data);
+
+      //filter
+      const filteredMessages = [];
+      for (let message in res.data) {
+        filteredMessages.push({
+          message: _.escape(message.message),
+          username: _.escape(message.username)
+        });
+      }
+      callback(filteredMessages);
+
     })
     .catch((err) => {
       console.log('FAILED get');
