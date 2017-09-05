@@ -6,8 +6,7 @@
   "dependencies": {},
   "devDependencies": {},
   "scripts": {
-    "start": "live-server",
-    "babel-watch": "babel . --out-dir compiled --presets=es2015,react --ignore=node_modules,compiled --source-maps inline --watch"
+    "start": "live-server"
   },
   "repository": {
     "type": "git",
