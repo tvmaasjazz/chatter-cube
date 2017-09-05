@@ -5,3 +5,5 @@ let Username = () => (
     <input type="text" name="username"/>  
   </div> 
 );
+
+window.Username = Username;
