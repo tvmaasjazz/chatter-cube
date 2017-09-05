@@ -1,1 +1,1 @@
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App getChatterMessages={window.getChatterMessages} postChatterMessage={window.postChatterMessage} />, document.getElementById('app'));
